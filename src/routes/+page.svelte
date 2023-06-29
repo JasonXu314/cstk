@@ -69,7 +69,7 @@
 				</p>
 				<footer>
 					<div class="links">
-						<a href="cbt" download="cbt">Download</a>
+						<a href="g--" download="g--">Download</a>
 						<a href="https://github.com/JasonXu314/g--" target="_blank" rel="noreferrer noopener">Repo</a>
 					</div>
 				</footer>
