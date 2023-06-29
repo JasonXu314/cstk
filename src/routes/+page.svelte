@@ -112,6 +112,17 @@
 
 <svelte:head>
 	<title>CSTK</title>
+	<meta name="author" content="Jason Xu" />
+	<meta name="description" content="A collection of tools/utilities to make CS at MST just a bit more bearable :)" />
+	<meta name="keywords" content="computer science,utilities" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Home" />
+	<meta property="og:description" content="A collection of tools/utilities to make CS at MST just a bit more bearable :)" />
+	<meta property="og:url" content="https://cstk.jasonxu.dev" />
+	<meta property="og:site_name" content="CSTK (Comp Sci Tool Kit)" />
+	<meta property="og:image" content="https://jasonxu.dev/logo.png" />
+	<meta name="theme-color" content="#1897C2" />
 </svelte:head>
 
 <style lang="scss">
