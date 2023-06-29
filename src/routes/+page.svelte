@@ -38,15 +38,22 @@
 				<div class="grid">
 					<img src="music-maker-preview.png" alt="Preview" />
 					<p>
-						A tool that compiles sheet music into a format recognizable by the CLI to turn into ATMega C code. Support for assembly is coming
-						soon&trade;.
+						A GUI tool that compiles sheet music into a format recognizable by the CLI to turn into ATMega32 C code. Support for assembly is Coming
+						Soon&trade;.
 					</p>
 				</div>
 				<footer>
 					<div class="links">
-						<a href="https://cstk.jasonxu.dev/music">Link</a>
-						<a href="https://github.com/JasonXu314/ce3150-music" target="_blank" rel="noreferrer noopener">CLI</a>
-						<a href="https://github.com/JasonXu314/ce3150-music-gui" target="_blank" rel="noreferrer noopener">Repo</a>
+						<a href="https://cstk.jasonxu.dev/music">GUI</a>
+						<a
+							href="simony"
+							download="simony"
+							data-tooltip={'A bad pun on "Simon" and "harmony" that actually means the selling of church titles lol'}
+						>
+							CLI Download
+						</a>
+						<a href="https://github.com/JasonXu314/ce3150-music" target="_blank" rel="noreferrer noopener">CLI Repo</a>
+						<a href="https://github.com/JasonXu314/ce3150-music-gui" target="_blank" rel="noreferrer noopener">GUI Repo</a>
 					</div>
 				</footer>
 			</article>
@@ -79,7 +86,7 @@
 				</p>
 				<footer>
 					<div class="links">
-						<a href="https://github.com/JasonXu314/ce3150-music-gui" target="_blank" rel="noreferrer noopener">Coming Soon</a>
+						<a href="/">Coming Soon</a>
 					</div>
 				</footer>
 			</article>
