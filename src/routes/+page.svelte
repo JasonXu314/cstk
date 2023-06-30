@@ -2,10 +2,10 @@
 	<hgroup>
 		<h1 class="title">
 			This is the <span class="acrostic">
-				<span class="word"><span class="lead">C</span>omp</span>
-				<span class="word"><span class="lead">S</span>ci</span>
-				<span class="word"><span class="lead">T</span>ool</span>
-				<span class="word"><span class="lead">K</span>it.</span>
+				<span class="word">Comp</span>
+				<span class="word">Sci</span>
+				<span class="word">Tool</span>
+				<span class="word">Kit.</span>
 			</span>
 		</h1>
 		<h2>Or, conveniences that the school really ought to provide us but since it doesn't here they are as my own projects :D</h2>
@@ -27,7 +27,10 @@
 				<footer>
 					<div class="links">
 						<a href="https://cstk.jasonxu.dev/er">Link</a>
-						<a href="https://github.com/JasonXu314/er-diagram" target="_blank" rel="noreferrer noopener">Repo</a>
+						<a href="https://github.com/JasonXu314/er-diagram" target="_blank" rel="noreferrer noopener">
+							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+							Repo
+						</a>
 					</div>
 				</footer>
 			</article>
@@ -50,10 +53,17 @@
 							download="simony"
 							data-tooltip={'A bad pun on "Simon" and "harmony" that actually means the selling of church titles lol'}
 						>
+							<i class="fa-solid fa-download fa-xs" />
 							CLI Download
 						</a>
-						<a href="https://github.com/JasonXu314/ce3150-music" target="_blank" rel="noreferrer noopener">CLI Repo</a>
-						<a href="https://github.com/JasonXu314/ce3150-music-gui" target="_blank" rel="noreferrer noopener">GUI Repo</a>
+						<a href="https://github.com/JasonXu314/ce3150-music" target="_blank" rel="noreferrer noopener">
+							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+							CLI Repo
+						</a>
+						<a href="https://github.com/JasonXu314/ce3150-music-gui" target="_blank" rel="noreferrer noopener">
+							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+							GUI Repo
+						</a>
 					</div>
 				</footer>
 			</article>
@@ -69,22 +79,31 @@
 				</p>
 				<footer>
 					<div class="links">
-						<a href="g--" download="g--">Download</a>
-						<a href="https://github.com/JasonXu314/g--" target="_blank" rel="noreferrer noopener">Repo</a>
+						<a href="g--" download="g--">
+							<i class="fa-solid fa-download fa-xs" />
+							Download
+						</a>
+						<a href="https://github.com/JasonXu314/g--" target="_blank" rel="noreferrer noopener">
+							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+							Repo
+						</a>
 					</div>
 				</footer>
 			</article>
 			<article class="tool">
 				<header>
-					<h1>CBT (WIP)</h1>
+					<h1>🛠️ CBT (WIP)</h1>
 				</header>
 				<p>
-					<span class="abbr">C</span>(++) <span class="abbr">B</span>uild <span class="abbr">T</span>ool (😝). My experimental (and also very WIP)
-					C++ package manager + build tool, all wrapped into one, built with plain from-scratch C++.
+					<span class="abbr">C</span>(++) <span class="abbr">B</span>uild <span class="abbr">T</span>ool. My experimental (and also very WIP) C++
+					package manager + build tool, all wrapped into one, built with plain from-scratch C++.
 				</p>
 				<footer>
 					<div class="links">
-						<a href="/">Coming Soon</a>
+						<a href="/">
+							<i class="fa-solid fa-screwdriver-wrench fa-xs" />
+							Coming Soon
+						</a>
 					</div>
 				</footer>
 			</article>
@@ -92,7 +111,7 @@
 		<div class="grid">
 			<article class="tool">
 				<header>
-					<h1>Coming Soon</h1>
+					<h1>🚀 Coming Soon</h1>
 				</header>
 				<p>
 					There are other tools in the works: in particular, a tool similar to the ER Diagram tool but for relational diagrams (or an add-on for that
@@ -100,7 +119,10 @@
 				</p>
 				<footer>
 					<div class="links">
-						<a href="https://github.com/JasonXu314">My GitHub :D</a>
+						<a href="https://github.com/JasonXu314" target="_blank" rel="noreferrer noopener">
+							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+							My GitHub 🙂
+						</a>
 					</div>
 				</footer>
 			</article>
@@ -132,7 +154,7 @@
 			.word {
 				margin-top: -0.3lh;
 
-				.lead {
+				&::first-letter {
 					color: var(--primary);
 				}
 			}
@@ -148,6 +170,10 @@
 
 		.links a {
 			margin-right: 1em;
+
+			i {
+				vertical-align: 50%;
+			}
 		}
 
 		.abbr {
