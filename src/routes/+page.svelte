@@ -20,8 +20,8 @@
 				<div class="grid">
 					<img class="preview" src="er-diagram-preview.png" alt="Preview" />
 					<p>
-						A tool that lets you build CS2300-compliant ER Diagrams, without the monetary pain of paid tools, or the psychological pain of using
-						google drawings.
+						A tool that lets you build CS2300-compliant ER Diagrams, without the monetary pain of paid tools, or the emotional pain of google
+						drawings.
 					</p>
 				</div>
 				<footer>
@@ -74,7 +74,7 @@
 					<h1>G--</h1>
 				</header>
 				<p>
-					A wrapper around the g++ compiler that does source analysis to automatically detect the c++ files that should be built for your program
+					A wrapper around the g++ compiler that does source analysis to automatically detect the C++ files that should be built for your program
 					(assuming CS1570 conventions).
 				</p>
 				<footer>
