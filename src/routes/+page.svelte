@@ -18,7 +18,7 @@
 					<h1>ER Diagram</h1>
 				</header>
 				<div class="grid">
-					<img src="er-diagram-preview.png" alt="Preview" />
+					<img class="preview" src="er-diagram-preview.png" alt="Preview" />
 					<p>
 						A tool that lets you build CS2300-compliant ER Diagrams, without the monetary pain of paid tools, or the psychological pain of using
 						google drawings.
@@ -36,7 +36,7 @@
 					<h1>Simon Board Music</h1>
 				</header>
 				<div class="grid">
-					<img src="music-maker-preview.png" alt="Preview" />
+					<img class="preview" src="music-maker-preview.png" alt="Preview" />
 					<p>
 						A GUI tool that compiles sheet music into a format recognizable by the CLI to turn into ATMega32 C code. Support for assembly is Coming
 						Soon&trade;.
@@ -81,8 +81,6 @@
 				<p>
 					<span class="abbr">C</span>(++) <span class="abbr">B</span>uild <span class="abbr">T</span>ool (😝). My experimental (and also very WIP)
 					C++ package manager + build tool, all wrapped into one, built with plain from-scratch C++.
-					<br />
-					<br />
 				</p>
 				<footer>
 					<div class="links">
@@ -148,17 +146,20 @@
 			margin-bottom: 0;
 		}
 
-		footer {
-			display: block;
-			margin-top: auto;
-		}
-
 		.links a {
 			margin-right: 1em;
 		}
 
 		.abbr {
 			color: var(--primary);
+		}
+
+		.grid {
+			gap: 1rem;
+		}
+
+		.preview {
+			max-height: 6lh;
 		}
 	}
 </style>
