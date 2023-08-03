@@ -1,3 +1,7 @@
+<script>
+	import Tool from './Tool.svelte';
+</script>
+
 <main class="container">
 	<hgroup>
 		<h1 class="title">
@@ -13,10 +17,7 @@
 
 	<section class="tools">
 		<div class="grid">
-			<article class="tool">
-				<header>
-					<h1>ER Diagram</h1>
-				</header>
+			<Tool title="ER Diagram">
 				<div class="grid">
 					<img class="preview" src="er-diagram-preview.png" alt="Preview" />
 					<p>
@@ -24,20 +25,15 @@
 						drawings.
 					</p>
 				</div>
-				<footer>
-					<div class="links">
-						<a href="https://cstk.jasonxu.dev/er">Link</a>
-						<a href="https://github.com/JasonXu314/er-diagram" target="_blank" rel="noreferrer noopener">
-							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
-							Repo
-						</a>
-					</div>
-				</footer>
-			</article>
-			<article class="tool">
-				<header>
-					<h1>Simon Board Music</h1>
-				</header>
+				<div class="links" slot="foot">
+					<a href="https://cstk.jasonxu.dev/er">Link</a>
+					<a href="https://github.com/JasonXu314/er-diagram" target="_blank" rel="noreferrer noopener">
+						<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+						Repo
+					</a>
+				</div>
+			</Tool>
+			<Tool title="Simon Board Music">
 				<div class="grid">
 					<img class="preview" src="music-maker-preview.png" alt="Preview" />
 					<p>
@@ -45,87 +41,94 @@
 						Soon&trade;.
 					</p>
 				</div>
-				<footer>
-					<div class="links">
-						<a href="https://cstk.jasonxu.dev/music">GUI</a>
-						<a
-							href="simony"
-							download="simony"
-							data-tooltip={'A bad pun on "Simon" and "harmony" that actually means the selling of church titles lol'}
-						>
-							<i class="fa-solid fa-download fa-xs" />
-							CLI Download
-						</a>
-						<a href="https://github.com/JasonXu314/ce3150-music" target="_blank" rel="noreferrer noopener">
-							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
-							CLI Repo
-						</a>
-						<a href="https://github.com/JasonXu314/ce3150-music-gui" target="_blank" rel="noreferrer noopener">
-							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
-							GUI Repo
-						</a>
-					</div>
-				</footer>
-			</article>
+				<div class="links" slot="foot">
+					<a href="https://cstk.jasonxu.dev/music">GUI</a>
+					<a
+						href="simony"
+						download="simony"
+						data-tooltip={'A bad pun on "Simon" and "harmony" that actually means the selling of church titles lol'}
+					>
+						<i class="fa-solid fa-download fa-xs" />
+						CLI Download
+					</a>
+					<a href="https://github.com/JasonXu314/ce3150-music" target="_blank" rel="noreferrer noopener">
+						<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+						CLI Repo
+					</a>
+					<a href="https://github.com/JasonXu314/ce3150-music-gui" target="_blank" rel="noreferrer noopener">
+						<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+						GUI Repo
+					</a>
+				</div>
+			</Tool>
 		</div>
 		<div class="grid">
-			<article class="tool">
-				<header>
-					<h1>G--</h1>
-				</header>
-				<p>
-					A wrapper around the g++ compiler that does source analysis to automatically detect the C++ files that should be built for your program
-					(assuming CS1570 conventions).
-				</p>
-				<footer>
-					<div class="links">
-						<a href="g--" download="g--">
-							<i class="fa-solid fa-download fa-xs" />
-							Download
-						</a>
-						<a href="https://github.com/JasonXu314/g--" target="_blank" rel="noreferrer noopener">
-							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
-							Repo
-						</a>
-					</div>
-				</footer>
-			</article>
-			<article class="tool">
-				<header>
-					<h1>🛠️ CBT (WIP)</h1>
-				</header>
+			<Tool title="Relational Diagram">
+				<div class="grid">
+					<img class="preview" src="rel-diagram-preview.png" alt="Preview" />
+					<p>A tool that lets you build CS2300-compliant Relational Diagrams.</p>
+				</div>
+				<div class="links" slot="foot">
+					<a href="https://cstk.jasonxu.dev/rel">Link</a>
+					<a href="https://github.com/JasonXu314/relational-diagram" target="_blank" rel="noreferrer noopener">
+						<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+						Repo
+					</a>
+				</div>
+			</Tool>
+			<Tool title="JSFlap">
+				<div class="grid">
+					<img class="preview" src="jsflap-preview.png" alt="Preview" />
+					<p>A (kind of incomplete) JFlap clone with backwards compatibility for building & testing FSMs more easily.</p>
+				</div>
+				<div class="links" slot="foot">
+					<a href="https://cstk.jasonxu.dev/jsflap">Link</a>
+					<a href="https://github.com/JasonXu314/jsflap" target="_blank" rel="noreferrer noopener">
+						<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+						Repo
+					</a>
+				</div>
+			</Tool>
+		</div>
+		<div class="grid">
+			<Tool
+				title="G--"
+				description="A wrapper around the g++ compiler that does source analysis to automatically detect the C++ files that should be built for your program
+			(assuming CS1570 conventions)."
+			>
+				<div class="links" slot="foot">
+					<a href="g--" download="g--">
+						<i class="fa-solid fa-download fa-xs" />
+						Download
+					</a>
+					<a href="https://github.com/JasonXu314/g--" target="_blank" rel="noreferrer noopener">
+						<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+						Repo
+					</a>
+				</div>
+			</Tool>
+			<Tool title="🛠️ CBT (WIP)">
 				<p>
 					<span class="abbr">C</span>(++) <span class="abbr">B</span>uild <span class="abbr">T</span>ool. My experimental (and also very WIP) C++
 					package manager + build tool, all wrapped into one, built with plain from-scratch C++.
 				</p>
-				<footer>
-					<div class="links">
-						<a href="/">
-							<i class="fa-solid fa-screwdriver-wrench fa-xs" />
-							Coming Soon
-						</a>
-					</div>
-				</footer>
-			</article>
+				<div class="links" slot="foot">
+					<a href="/">
+						<i class="fa-solid fa-screwdriver-wrench fa-xs" />
+						Coming Soon
+					</a>
+				</div>
+			</Tool>
 		</div>
 		<div class="grid">
-			<article class="tool">
-				<header>
-					<h1>🚀 Coming Soon</h1>
-				</header>
-				<p>
-					There are other tools in the works: in particular, a tool similar to the ER Diagram tool but for relational diagrams (or an add-on for that
-					tool).
-				</p>
-				<footer>
-					<div class="links">
-						<a href="https://github.com/JasonXu314" target="_blank" rel="noreferrer noopener">
-							<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
-							My GitHub 🙂
-						</a>
-					</div>
-				</footer>
-			</article>
+			<Tool title="🚀 Coming Soon" description="There are other tools & enhancements in the works, keep an eye out for changes!">
+				<div class="links" slot="foot">
+					<a href="https://github.com/JasonXu314" target="_blank" rel="noreferrer noopener">
+						<i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+						My GitHub 🙂
+					</a>
+				</div>
+			</Tool>
 		</div>
 	</section>
 </main>
@@ -161,12 +164,8 @@
 		}
 	}
 
-	.tool {
+	:global(.tool) {
 		margin-top: 0;
-
-		header h1 {
-			margin-bottom: 0;
-		}
 
 		.links a {
 			margin-right: 1em;
